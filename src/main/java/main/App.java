@@ -49,7 +49,7 @@ public class App
                         exit = true;
                         break;
                     default:
-                        System.out.println("Syöte on väärä");
+                        System.out.println("Syöte oli väärä");
                         break;
                 }
             }
