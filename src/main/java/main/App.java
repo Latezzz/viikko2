@@ -11,9 +11,8 @@ public class App
     {
         Scanner sc = new Scanner(System.in);
 
-        String name = "Pikseli";
-        int age = 5;
-        Hedgehog hedgehog = new Hedgehog(name, age);
+
+        Hedgehog hedgehog = new Hedgehog();
         
 
         boolean exit = false;
@@ -27,14 +26,14 @@ public class App
                     case 1:
                         System.out.println("Mitä siili sanoo:");
                             String whatToSay = sc.nextLine();
-                            
+
                             hedgehog.speak(whatToSay);                     
                         break;
                     case 2:
                         System.out.println("Anna siilin nimi:");
-                        name = sc.nextLine();
+                        String name = sc.nextLine();
                         System.out.println("Anna siilin ikä:");
-                        age = Integer.parseInt(sc.nextLine());
+                        int age = Integer.parseInt(sc.nextLine());
 
                         hedgehog = new Hedgehog(name, age);
 
